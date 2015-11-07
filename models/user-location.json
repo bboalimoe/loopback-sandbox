@@ -1,0 +1,84 @@
+{
+  "name": "UserLocation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "objectId": {
+      "type": "string",
+      "required": true
+    },
+    "user_id": {
+      "type": "string",
+      "required": true
+    },
+    "userRawdataId": {
+      "type": "string",
+      "required": true
+    },
+    "isTrainingSample": {
+      "type": "number"
+    },
+    "city": {
+      "type": "string"
+    },
+    "radius": {
+      "type": "number"
+    },
+    "street": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "number"
+    },
+    "province": {
+      "type": "string"
+    },
+    "processStatus": {
+      "type": "string"
+    },
+    "street_number": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "nation": {
+      "type": "string"
+    },
+    "poiProbLv1": {
+      "type": "object",
+      "required": true
+    },
+    "poiProbLv2": {
+      "type": "object",
+      "required": true
+    },
+    "pois": {
+      "type": "object",
+      "required": true
+    },
+    "location": {
+      "type": "geopoint",
+      "required": true
+    },
+    "createdAt": {
+      "type": "string",
+      "required": true
+    },
+    "updatedAt": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {},
+  "scope": {
+    "order": "name",
+    "limit": 100
+  }
+}
